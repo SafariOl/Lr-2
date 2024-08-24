@@ -9,16 +9,9 @@ def expression(a, b):
         z = math.sqrt(a + b**2)
     return z
 
-def product(x, y):
-    dob = 1
-    for i in range(x, y + 1):
-        if i % 2 == 1:
-            dob *= i
-    return dob
-
 a = int(input("Введіть значення a: "))
 b = int(input("Введіть значення b: "))
-print("Значення виразу z = ", expression(a, b))
+print(f"Значення виразу z = {expression(a, b):.2f}")
 
 n = int(input("Введіть значення n: "))
-print(f"Сума числа n={n}:", calculation(n))
+print(f"Сума числа n: {calculation(n):.2f}")
